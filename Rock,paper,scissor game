@@ -1,0 +1,23 @@
+#ROCK,PAPER,SCISSOR GAME
+import random
+computer =random.choice(['rock','paper','scissor'])
+user=input("enter your choice---- rock,paper,scissor")
+
+print("computer chose:",computer)
+print("user chose:",user)
+
+print(computer,"V/S",user)
+if computer == user:
+    print("match tied")
+
+elif computer =="rock" and user == "paper":
+    print("you win:")
+
+elif computer == "paper" and user == "scissor":
+    print("you win")
+    
+elif computer =="scissor" and user == "rock":
+    print("you win")             
+    
+else:
+    print("you loose")    
